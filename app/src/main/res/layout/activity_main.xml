@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/container">
+
+
+    <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:id="@+id/imageViewChat"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:src="@drawable/chat_icon" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/imageViewNoti"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:src="@drawable/main_icon_report" />
+
+                            <ImageView
+                                android:id="@+id/imageViewNavMenu"
+                                android:layout_width="32dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/navmenu_icon" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="386dp"
+                            android:layout_height="153dp"
+                            android:scaleType="center"
+                            android:layout_gravity="center"
+                            android:src="@drawable/logo" />
+
+                        <EditText
+                            android:id="@+id/editText_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boder_edittext"
+                            android:drawableLeft="@drawable/icon_search"
+                            android:drawableRight="@drawable/icon_re"
+                            android:editable="false"
+                            android:ems="10"
+                            android:hint="Vd:ăn trưa, cá thu, trà sữa"
+                            android:inputType="none"/>
+
+                        <TextView
+                            android:id="@+id/textView_demo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:textSize="10pt"
+                            android:text="Let's find your favourite!..." />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerViewShow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1000dp"
+                        android:layout_margin="10dp" />
+
+                </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/plus_icon"/>
+
+</android.support.design.widget.CoordinatorLayout>

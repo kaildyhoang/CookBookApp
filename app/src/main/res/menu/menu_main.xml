@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.p_dev.actionbar.MainActivity">
+
+    <item
+    android:icon="@drawable/main_icon_report"
+    android:id="@+id/rp"
+    android:title=""
+
+    app:showAsAction="ifRoom" />
+    <item
+        android:icon="@drawable/food_main"
+        android:id="@+id/main_right"
+        android:title=""
+        app:showAsAction="ifRoom" />
+</menu>
